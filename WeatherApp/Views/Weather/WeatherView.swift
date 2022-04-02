@@ -22,7 +22,7 @@ struct WeatherView: View {
                     WeatherInfo(currentWeather: currentWeather)
                     WeatherRow(currentWeather: currentWeather)
                     Divider()
-                   WeatherPicker(weather: currentWeather)
+                    WeatherPicker(weather: currentWeather)
                 }
             }
         }

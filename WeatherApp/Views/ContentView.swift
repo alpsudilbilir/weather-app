@@ -30,7 +30,7 @@ struct ContentView: View {
                             } catch {
                                 print("Error when getting weather.")
                             }
-                        }
+                    }
                 }
             }
         }

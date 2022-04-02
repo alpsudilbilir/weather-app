@@ -20,7 +20,7 @@ struct HourlyWeather: View {
                                 .overlay {
                                     hourlyWeather.hourly[i].weather.first!.iconImage
                                         .renderingMode(.original)
-                                }
+                            }
                         }
                         Text("\( Int( hourlyWeather.hourly[i].temp))°C")
                     }

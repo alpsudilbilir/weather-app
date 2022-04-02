@@ -17,7 +17,6 @@ struct WeatherPicker: View {
                 ForEach(forecasts, id:\.self) {
                     Text($0)
                         .foregroundColor(.blue)
-
                 }
             }
             .pickerStyle(SegmentedPickerStyle())

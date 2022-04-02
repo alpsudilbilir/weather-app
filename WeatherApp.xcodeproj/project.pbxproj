@@ -80,7 +80,6 @@
 				15D0B14D27F30D12009943B3 /* WeatherAppApp.swift */,
 				15D0B16027F315EE009943B3 /* Managers */,
 				15D0B15D27F3107E009943B3 /* Views */,
-				15D745C827F52389006E49B8 /* Helpers */,
 				15D0B16327F48F6E009943B3 /* Model */,
 				15D0B15127F30D13009943B3 /* Assets.xcassets */,
 				15D0B15327F30D13009943B3 /* Preview Content */,
@@ -104,6 +103,7 @@
 				15D0B14F27F30D12009943B3 /* ContentView.swift */,
 				15D0B15B27F30D44009943B3 /* WelcomeView.swift */,
 				15D0B17027F4ACE1009943B3 /* Weather */,
+				15D745C827F52389006E49B8 /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";

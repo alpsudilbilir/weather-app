@@ -21,12 +21,9 @@ struct DailyWeather: View {
                                     dailyWeather.daily[i].weather.first!.iconImage
                                         .renderingMode(.original)
                                 }
-
                         }
-
-
-                        Text("\( Int( dailyWeather.daily[i].temp.max))°C")
-                        Text("\(Int(  dailyWeather.daily[i].temp.min))°C")
+                        Text("\(Int( dailyWeather.daily[i].temp.max.rounded()))°C")
+                        Text("\(Int(dailyWeather.daily[i].temp.min.rounded()))°C")
                     }
                     Divider()
                 }
@@ -36,7 +33,7 @@ struct DailyWeather: View {
             .padding()
             .font(.subheadline)
         }
-
+        
     }
 }
 

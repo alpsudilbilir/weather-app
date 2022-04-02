@@ -17,12 +17,6 @@ struct Response: Codable {
     var daily: [Daily]
     var hourly: [Hourly]
     
-    struct Hourly: Codable {
-        var dt: Date
-        var temp: Double
-        var weather: [Weather]
-    }
-    
     struct Current: Codable {
         var dt: Date
         var temp: Double
@@ -33,6 +27,7 @@ struct Response: Codable {
         var weather: [Weather]
         
     }
+    
     struct Weather: Codable, Identifiable {
         var id: Int
         var main: String
@@ -42,18 +37,25 @@ struct Response: Codable {
             selectIcon(icon: icon)
         }
     }
+    
     struct Daily: Codable {
         var dt: Date
         var temp: Temperature
         var weather: [Weather]
     }
+    
+    struct Hourly: Codable {
+        var dt: Date
+        var temp: Double
+        var weather: [Weather]
+    }
+    
     struct Temperature: Codable {
         var min: Double
         var max: Double
     }
     
     //Refactored Data
-
     var currentDate: String {
         "\(current.dt.formatted(.dateTime.weekday(.wide).month().day()))"
     }
@@ -77,7 +79,7 @@ struct Response: Codable {
     }
 }
 
-func selectIcon(icon: String) -> Image {
+    func selectIcon(icon: String) -> Image {
     switch icon {
     case "01d":
       return Image(systemName: "sun.max.fill")
@@ -119,3 +121,4 @@ func selectIcon(icon: String) -> Image {
         return Image(systemName: "sun.max")
     }
 }
+
