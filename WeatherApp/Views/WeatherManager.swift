@@ -11,7 +11,7 @@ import SwiftUI
 final class WeatherManager {
     func fetchWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> Response {
         
-        let API_KEY = ""
+        let API_KEY = "Write your API key here."
         
         guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=\(latitude)&lon=\(longitude)&exclude=minutely&appid=\(API_KEY)&units=metric") else {
             fatalError("Unvalid URL!")
