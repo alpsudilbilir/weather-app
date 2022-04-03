@@ -2,7 +2,7 @@
 //  LocationManager.swift
 //  WeatherApp
 //
-//  Created by Alpsu Dilbilir on 29.03.2022.
+//  Created by Alpsu Dilbilir on 3.04.2022.
 //
 
 import CoreLocation
