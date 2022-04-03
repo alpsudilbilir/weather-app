@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1584432E27FA339D0077E9A4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584432D27FA339D0077E9A4 /* Extension.swift */; };
 		15AA9B2F27F5160700BEF71A /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA9B2E27F5160700BEF71A /* DailyWeather.swift */; };
 		15D0B14E27F30D12009943B3 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0B14D27F30D12009943B3 /* WeatherAppApp.swift */; };
 		15D0B15027F30D12009943B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0B14F27F30D12009943B3 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1584432D27FA339D0077E9A4 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		15AA9B2E27F5160700BEF71A /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		15D0B14A27F30D12009943B3 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D0B14D27F30D12009943B3 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1584432C27FA33910077E9A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1584432D27FA339D0077E9A4 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		15D0B14127F30D12009943B3 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +87,10 @@
 		15D0B14C27F30D12009943B3 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				1584432C27FA33910077E9A4 /* Extensions */,
 				15D0B14D27F30D12009943B3 /* WeatherAppApp.swift */,
-				15D0B16027F315EE009943B3 /* Managers */,
 				15D0B15D27F3107E009943B3 /* Views */,
+				15D0B16027F315EE009943B3 /* Managers */,
 				15D0B16327F48F6E009943B3 /* Model */,
 				15D0B15127F30D13009943B3 /* Assets.xcassets */,
 				15D0B15327F30D13009943B3 /* Preview Content */,
@@ -217,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1584432E27FA339D0077E9A4 /* Extension.swift in Sources */,
 				15AA9B2F27F5160700BEF71A /* DailyWeather.swift in Sources */,
 				15D0B16227F48F05009943B3 /* WeatherView.swift in Sources */,
 				15D0B15F27F310A9009943B3 /* LocationManager.swift in Sources */,
