@@ -13,12 +13,14 @@ struct Response: Codable {
     var lat: Double
     var lon: Double
     var timezone: String
+    var timezone_offset: Date
     var current: Current
     var daily: [Daily]
     var hourly: [Hourly]
     
+    
     struct Current: Codable {
-        var dt: Date
+        var dt: Double
         var temp: Double
         var feels_like: Double
         var pressure: Double
@@ -39,13 +41,13 @@ struct Response: Codable {
     }
     
     struct Daily: Codable {
-        var dt: Date
+        var dt: Double
         var temp: Temperature
         var weather: [Weather]
     }
     
     struct Hourly: Codable {
-        var dt: Date
+        var dt: Double
         var temp: Double
         var weather: [Weather]
     }
@@ -56,8 +58,9 @@ struct Response: Codable {
     }
     
     //Refactored Data
-    var currentDate: String {
-        "\(current.dt.formatted(.dateTime.weekday(.wide).month().day()))"
+     var currentDate: String {
+         let date = Date(timeIntervalSince1970: current.dt)
+         return date.formatted(.dateTime.weekday(.wide).month().day())
     }
     var currentTemp: String {
         "\(Int(current.temp.rounded()))°C"

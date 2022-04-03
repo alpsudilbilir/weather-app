@@ -12,9 +12,9 @@ struct DailyWeather: View {
     var body: some View {
         VStack(spacing: 5) {
             HStack(spacing: 5) {
-                ForEach(1..<8) { i in
+                ForEach(0..<8) { i in
                     VStack(spacing: 20) {
-                        Text(dailyWeather.daily[i].dt.formatted(.dateTime.weekday()))
+                        Text("\((Date(timeIntervalSince1970: dailyWeather.daily[i].dt).formatted(.dateTime.weekday())))")
                         ZStack {
                             Circle().stroke()
                                 .overlay {
@@ -25,6 +25,7 @@ struct DailyWeather: View {
                         Text("\(Int( dailyWeather.daily[i].temp.max.rounded()))°C")
                         Text("\(Int(dailyWeather.daily[i].temp.min.rounded()))°C")
                     }
+                    .animation(.ripple(index: i))
                     Divider()
                 }
                 .frame(height: 150)
@@ -33,6 +34,7 @@ struct DailyWeather: View {
             .padding()
             .font(.subheadline)
         }
+        .animation(.easeInOut(duration: 1))
         
     }
 }
