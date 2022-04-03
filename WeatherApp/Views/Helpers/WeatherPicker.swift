@@ -16,20 +16,20 @@ struct WeatherPicker: View {
             Picker("Select Forecast Info", selection: $selection) {
                 ForEach(forecasts, id:\.self) {
                     Text($0)
-                        .foregroundColor(.blue)
                 }
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .background(Color.white)
+            .pickerStyle(.segmented)
             .cornerRadius(8)
             .padding()
             if selection == "Daily" {
                 DailyWeather(dailyWeather: weather)
+                
             } else {
                 HourlyWeather(hourlyWeather: weather)
             }
         }
     }
+
 }
 struct WeatherPicker_Previews: PreviewProvider {
     static var previews: some View {

@@ -14,7 +14,7 @@ struct WeatherInfo: View {
         VStack(spacing: 12) {
             Text(currentWeather.currentDate)
                 .foregroundColor(.white)
-            Text(currentWeather.timezone)
+            Text(locationManager.cityName)
                 .foregroundColor(.white)
                 .font(.largeTitle)
                 .animation(.easeIn.delay(0.2))

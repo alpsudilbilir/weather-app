@@ -13,7 +13,7 @@ struct WeatherView: View {
     @State var currentWeather: Response
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.blue.opacity(0.6), .blue], startPoint: .bottom, endPoint: .top)
+            LinearGradient(colors: [.blue, .blue], startPoint: .bottom, endPoint: .top)
                 .edgesIgnoringSafeArea(.all)
             ScrollView {
                 VStack(spacing: 20) {

@@ -12,9 +12,9 @@ struct HourlyWeather: View {
     var body: some View {
         VStack(spacing: 5) {
             HStack(spacing: 5) {
-                ForEach(1..<7) { i in
+                ForEach(1..<8) { i in
                     VStack(spacing: 20) {
-                        Text(hourlyWeather.hourly[i].dt.formatted(.dateTime.hour(.conversationalDefaultDigits(amPM: .omitted)).minute()))
+                        Text("\(Date(timeIntervalSince1970: hourlyWeather.hourly[i].dt).formatted(.dateTime.hour()))".uppercased())
                         ZStack {
                             Circle().stroke()
                                 .overlay {
@@ -24,6 +24,7 @@ struct HourlyWeather: View {
                         }
                         Text("\( Int( hourlyWeather.hourly[i].temp))°C")
                     }
+                    .animation(.ripple(index: i))
                     Divider()
                 }
                 .frame(height: 110)
