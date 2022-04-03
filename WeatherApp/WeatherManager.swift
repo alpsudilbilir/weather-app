@@ -1,8 +1,8 @@
 //
-//  WeatherViewModel.swift
+//  WeatherManager.swift
 //  WeatherApp
 //
-//  Created by Alpsu Dilbilir on 30.03.2022.
+//  Created by Alpsu Dilbilir on 3.04.2022.
 //
 import CoreLocation
 import Foundation
