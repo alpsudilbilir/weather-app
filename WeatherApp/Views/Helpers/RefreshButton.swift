@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct RefreshButton: View {
+    @EnvironmentObject var locationManager: LocationManager
     let weatherManager = WeatherManager()
-    let locationManager = LocationManager()
     @Binding var currentWeather: Response
     var body: some View {
-        HStack {
-            Spacer()
-            Button {
-                Task {
-                    currentWeather = try await weatherManager.fetchWeather(latitude: (locationManager.userLocation?.coordinate.latitude)!, longitude: (locationManager.userLocation?.coordinate.longitude)!)
-                }
-            } label: {
-                Image(systemName: "arrow.clockwise")
-                    .foregroundColor(.white)
+        Button {
+            Task {
+                currentWeather = try await weatherManager.fetchWeather(latitude: (locationManager.userLocation?.coordinate.latitude)!, longitude: (locationManager.userLocation?.coordinate.longitude)!)
+                locationManager.updateCityName(latitude: (locationManager.userLocation?.coordinate.latitude)!, longitude: (locationManager.userLocation?.coordinate.longitude)!)
             }
+        } label: {
+            Image(systemName: "house")
+                .foregroundColor(.white)
         }
     }
 }
