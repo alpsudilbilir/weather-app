@@ -22,7 +22,6 @@ struct WeatherRow: View {
             }
             VStack {
                 Image(systemName: "wind")
-                    .renderingMode(.original)
                     .resizable()
                     .frame(width: 50, height: 50)
                 Text("Wind Speed")

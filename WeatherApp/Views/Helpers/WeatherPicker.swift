@@ -29,7 +29,6 @@ struct WeatherPicker: View {
             }
         }
     }
-
 }
 struct WeatherPicker_Previews: PreviewProvider {
     static var previews: some View {

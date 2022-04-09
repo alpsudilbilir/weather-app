@@ -11,7 +11,7 @@ struct DailyWeather: View {
     var dailyWeather: Response
     var body: some View {
         VStack(spacing: 5) {
-            HStack(spacing: 5) {
+            HStack(spacing: 3) {
                 ForEach(0..<8) { i in
                     VStack(spacing: 20) {
                         Text("\((Date(timeIntervalSince1970: dailyWeather.daily[i].dt).formatted(.dateTime.weekday())))")
@@ -35,7 +35,6 @@ struct DailyWeather: View {
             .font(.subheadline)
         }
         .animation(.easeInOut(duration: 1))
-        
     }
 }
 

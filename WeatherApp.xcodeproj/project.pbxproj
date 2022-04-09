@@ -10,6 +10,7 @@
 		1584432E27FA339D0077E9A4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584432D27FA339D0077E9A4 /* Extension.swift */; };
 		1584433027FA36960077E9A4 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584432F27FA36960077E9A4 /* WeatherManager.swift */; };
 		1584433227FA37260077E9A4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584433127FA37260077E9A4 /* LocationManager.swift */; };
+		15A3687928022A2F0015EB79 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3687828022A2F0015EB79 /* SearchBar.swift */; };
 		15AA9B2F27F5160700BEF71A /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA9B2E27F5160700BEF71A /* DailyWeather.swift */; };
 		15D0B14E27F30D12009943B3 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0B14D27F30D12009943B3 /* WeatherAppApp.swift */; };
 		15D0B15027F30D12009943B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0B14F27F30D12009943B3 /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 		1584432D27FA339D0077E9A4 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		1584432F27FA36960077E9A4 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		1584433127FA37260077E9A4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		15A3687828022A2F0015EB79 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		15AA9B2E27F5160700BEF71A /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		15D0B14A27F30D12009943B3 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D0B14D27F30D12009943B3 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				15D745C927F5239F006E49B8 /* RefreshButton.swift */,
 				15D745D127F8FF09006E49B8 /* WeatherPicker.swift */,
+				15A3687828022A2F0015EB79 /* SearchBar.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				15D0B16227F48F05009943B3 /* WeatherView.swift in Sources */,
 				1584433227FA37260077E9A4 /* LocationManager.swift in Sources */,
 				15D745CA27F5239F006E49B8 /* RefreshButton.swift in Sources */,
+				15A3687928022A2F0015EB79 /* SearchBar.swift in Sources */,
 				15D0B15027F30D12009943B3 /* ContentView.swift in Sources */,
 				15D0B16F27F4ACDD009943B3 /* WeatherRow.swift in Sources */,
 				15D745CE27F89FB0006E49B8 /* Response.swift in Sources */,
@@ -299,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -353,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
