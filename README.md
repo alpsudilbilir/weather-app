@@ -1,5 +1,5 @@
 # 🌧 Weather App  ☀️ 
-Alternative open source weather app developed by Swift-SwiftUI for learning purposes.
+Alternative open source weather app developed for learning purposes.
 
 It uses openweathermap.org API to get weather forecasts.
 
